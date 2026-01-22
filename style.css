@@ -1,0 +1,206 @@
+/* ============================================================
+   Week 2 CSS Assignment A3 (STARTER)
+   Students: Complete TODO sections according to ASSIGNMENT.md
+   Topics: Flexbox, Grid, rem units, media queries
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+:root {
+  /* TODO: You can change theme colors */
+  --bg: #f9fafb;
+  --text: #111827;
+  --muted: #6b7280;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem; /* rem unit */
+}
+
+/* ===== NAV (Flexbox) ===== */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* makes header responsive */
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* links wrap on small screens */
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+}
+
+.nav a.active {
+  background: #eef2ff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 1.25rem 0 0.5rem;
+}
+
+.section {
+  padding: 1.25rem 0;
+}
+
+.section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.muted { color: var(--muted); }
+
+/* ===== PRODUCTS GRID (TODO) ===== */
+.products-grid {
+  /* TODO: Make this a responsive Grid:
+     - Mobile: 1 column
+     - Tablet: 2 columns (≥ 768px)
+     - Desktop: 3 columns (≥ 1024px) */
+  display: grid;
+  gap: 1rem;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 1rem;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.price {
+  font-weight: 900;
+}
+
+.btn {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--brand-dark);
+}
+
+/* ===== NEWSLETTER (TODO) ===== */
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: var(--radius);
+  padding: 1rem;
+  flex-wrap: wrap; /* responsive */
+}
+
+.newsletter-form {
+  /* TODO: Use Flexbox to align input + button */
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font: inherit;
+  min-width: 240px;
+}
+
+/* Accessible helper: screen-reader only label */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+  background: var(--card);
+}
+
+.footer-row {
+  padding: 1rem 0;
+}
+
+/* ===== MEDIA QUERIES (TODO) ===== */
+/* Tablet */
+@media (min-width: 768px) {
+  /* TODO: 2 columns */
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  /* TODO: 3 columns */
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+  Week 2 CSS Assignment A3 (STARTER)
+  Topic: Flexbox + Grid + Responsive Design
+  Student Instructions:
+  - Follow ASSIGNMENT.md
+  - Fill TODO sections
+  - Use rem units and media queries
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Makes layout responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Shop | Product Cards</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================
+       HEADER / NAV (Flexbox)
+       ===================== -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <!-- TODO: Change logo text to your brand -->
+      <a class="logo" href="#">MiniShop</a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <!-- TODO: Add 4 links: Home, Products, Pricing, Contact -->
+        <a href="#" class="active">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- =====================
+         HERO SECTION
+         ===================== -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Responsive Product Cards</h1>
+        <p>
+          Build this page using <strong>CSS Grid</strong> for cards and
+          <strong>Flexbox</strong> for navigation.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================
+         PRODUCTS (Grid)
+         ===================== -->
+    <section class="section">
+      <h2 class="section-title">Featured Products</h2>
+
+      <!-- TODO: Make this a responsive Grid in CSS -->
+      <div class="products-grid">
+
+        <!-- PRODUCT CARD 1 -->
+        <article class="product-card">
+          <img src="assets/images/p1.jpg" alt="Product 1" />
+          <div class="product-body">
+            <h3>Product One</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 1,999</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 2 -->
+        <article class="product-card">
+          <img src="assets/images/p2.jpg" alt="Product 2" />
+          <div class="product-body">
+            <h3>Product Two</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 2,499</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 3 -->
+        <article class="product-card">
+          <img src="assets/images/p3.jpg" alt="Product 3" />
+          <div class="product-body">
+            <h3>Product Three</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 3,199</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 4 -->
+        <article class="product-card">
+          <img src="assets/images/p4.jpg" alt="Product 4" />
+          <div class="product-body">
+            <h3>Product Four</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 999</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 5 -->
+        <article class="product-card">
+          <img src="assets/images/p5.jpg" alt="Product 5" />
+          <div class="product-body">
+            <h3>Product Five</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 4,999</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 6 -->
+        <article class="product-card">
+          <img src="assets/images/p6.jpg" alt="Product 6" />
+          <div class="product-body">
+            <h3>Product Six</h3>
+            <p>Short description of the product.</p>
+            <div class="product-row">
+              <span class="price">PKR 1,299</span>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =====================
+         NEWSLETTER (Form)
+         ===================== -->
+    <section class="section newsletter">
+      <div>
+        <h2 class="section-title">Subscribe</h2>
+        <p class="muted">Get updates about new products and discounts.</p>
+      </div>
+
+      <!-- TODO: Style this form and make it responsive -->
+      <form class="newsletter-form" action="#">
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" required placeholder="name@example.com" />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© 2026 MiniShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
